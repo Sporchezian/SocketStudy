@@ -47,6 +47,23 @@ To perform a study on Socket Programming
 •	Once a connection is establi
 •	shed, servers can send and receive data using send() and recv().
 
+## Client –Server Operations
+
+Clients create a socket using socket() and connect to a server using connect().
+After establishing a connection, clients can send and receive data using send() and recv().
+
+## Use Cases of Socket Programming:
+Socket programming finds applications in various domains, including web development, file transfer protocols, online gaming, and real-time communication. It is the foundation for protocols like HTTP, FTP, and SMTP, which power the internet. Socket programming enables the development of both server and client applications, facilitating the exchange of information between devices in a networked environment.
+## Example Use Cases:
+
+1.	Web servers: Web servers use socket programming to handle incoming HTTP requests from clients, serving web pages and content.
+2.	Chat Application: Instant messaging and chat applications use sockets to enable real-time communication between users.
+3.	File Transfer Protocol: Protocols like FTP (File Transfer Protocol) utilize socket programming for transferring files between a client and a server.
+4.	Networked Games: Online multiplayer games rely on socket programming to facilitate communication between game clients and servers.
+5.	RPC mechanisms: which allow processes to execute code on a remote server, often use socket programming for communication.
+
+## SERVER SIDE CODE:
+
 ```
 import socket
 
@@ -78,14 +95,12 @@ conn.send(message.encode())
 conn.close()
 server_socket.close()
 ```
-## Server-side output:
+
+## SERVER-SIDE OUTPUT:
+
 <img width="1482" height="225" alt="image" src="https://github.com/user-attachments/assets/5b89338c-4bd0-4bc1-bf88-0dec228188ba" />
 
-
-## Client –Server Operations
-
-Clients create a socket using socket() and connect to a server using connect().
-After establishing a connection, clients can send and receive data using send() and recv().
+## CLIENT-SIDE CODE:
 
 ```
 import socket
@@ -110,21 +125,9 @@ print("Server says:", data)
 client_socket.close()
 ```
 
-## Client-side output:
+## CLIENT-SIDE OUTPUT:
 
 <img width="1322" height="183" alt="image" src="https://github.com/user-attachments/assets/192adbd0-a06c-4b21-8fc2-8dbf7ddc2870" />
-
-
-## Use Cases of Socket Programming:
-Socket programming finds applications in various domains, including web development, file transfer protocols, online gaming, and real-time communication. It is the foundation for protocols like HTTP, FTP, and SMTP, which power the internet. Socket programming enables the development of both server and client applications, facilitating the exchange of information between devices in a networked environment.
-## Example Use Cases:
-
-1.	Web servers: Web servers use socket programming to handle incoming HTTP requests from clients, serving web pages and content.
-2.	Chat Application: Instant messaging and chat applications use sockets to enable real-time communication between users.
-3.	File Transfer Protocol: Protocols like FTP (File Transfer Protocol) utilize socket programming for transferring files between a client and a server.
-4.	Networked Games: Online multiplayer games rely on socket programming to facilitate communication between game clients and servers.
-5.	RPC mechanisms: which allow processes to execute code on a remote server, often use socket programming for communication.
-
 
 ## Result:
 Thus the study of Socket Programming Completed Successfully
