@@ -96,10 +96,6 @@ conn.close()
 server_socket.close()
 ```
 
-## SERVER-SIDE OUTPUT:
-
-<img width="1482" height="225" alt="image" src="https://github.com/user-attachments/assets/5b89338c-4bd0-4bc1-bf88-0dec228188ba" />
-
 ## CLIENT-SIDE CODE:
 
 ```
@@ -124,6 +120,10 @@ print("Server says:", data)
 # Close socket
 client_socket.close()
 ```
+
+## SERVER-SIDE OUTPUT:
+
+<img width="1482" height="225" alt="image" src="https://github.com/user-attachments/assets/5b89338c-4bd0-4bc1-bf88-0dec228188ba" />
 
 ## CLIENT-SIDE OUTPUT:
 
